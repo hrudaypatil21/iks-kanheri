@@ -7,11 +7,11 @@ const Header = () => {
         <div className="nav-container">
           <a href="#" className="logo">Kanheri <span>Caves</span></a>
           <ul className="nav-links">
-            <li><a href="#home">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#history">History</a></li>
-            <li><a href="#tour">Virtual Tour</a></li>
-            <li><a href="#art">Buddhist Art</a></li>
-            <li><a href="#visitor">Visitor Info</a></li>
+            <li><a href="/architecture">Architecture</a></li>
+            <li><a href="/inscriptions">Inscriptions</a></li>
+            <li><a href="#art">Art</a></li>
           </ul>
         </div>
       </nav>

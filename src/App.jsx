@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import Header from './components/Header/Header'
 import LandingPage from './components/LandingPage/LandingPage'
 import Footer from './components/Footer/Footer'
+import Architecture from './components/ArchitecturePage/Architecture'
+// import Inscriptions from './components/Inscriptions/Inscriptions'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import './styles.css';
@@ -45,6 +47,8 @@ function App() {
     <Header />
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/architecture" element={<Architecture/>} />
+      {/* <Route path="/inscriptions" element={<Inscriptions />} /> */}
       <Route path="*" element={<h1>404 - Not Found</h1>} />
     </Routes>
     <Footer/>

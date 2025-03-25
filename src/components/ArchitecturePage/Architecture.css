@@ -1,0 +1,143 @@
+/* Header Section */
+.architecture-header {
+    position: relative;
+    height: 400px;
+    background-image: url('https://example.com/kanheri-caves-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  
+  /* Header Overlay */
+  .architecture-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  /* Header Typography */
+  .architecture-header h1,
+  .architecture-header p {
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+  
+  .architecture-header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .architecture-header p {
+    max-width: 800px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Main Content Section */
+  .architecture-section {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    margin: 40px 0; /* Reduced from 80px */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Text Content */
+  .architecture-intro {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    color: #5a3921;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  
+  .intro-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #333;
+    margin: 0;
+    text-align: left;
+    font-family: 'Lora', serif;
+    max-width: 90%;
+  }
+  
+  /* Image Content */
+  .architecture-image {
+    flex: 1;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .featured-image {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+  }
+  
+  .featured-image:hover {
+    transform: scale(1.01);
+  }
+  
+  .image-caption {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .architecture-section {
+      flex-direction: column;
+      gap: 40px;
+      padding: 0 20px;
+    }
+    
+    .architecture-image {
+      width: 100%;
+      min-width: auto;
+      margin-top: 20px;
+    }
+    
+    .intro-text {
+      max-width: 100%;
+    }
+    
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+  }

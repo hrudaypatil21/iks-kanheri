@@ -36,6 +36,10 @@ footer {
     list-style: none;
 }
 
+.footer-links li:hover {
+    text-decoration: underline;
+}
+
 .footer-links li {
     margin-bottom: 0.8rem;
 }

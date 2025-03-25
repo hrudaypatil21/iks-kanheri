@@ -31,8 +31,8 @@ export default function Footer() {
             <li><a href="#">Ajanta Caves</a></li>
             <li><a href="#">Ellora Caves</a></li>
             <li><a href="#">Elephanta Caves</a></li>
-            <li><a href="#">Sanjay Gandhi National Park</a></li>
-            <li><a href="#">Archaeological Survey of India</a></li>
+            <li><a href="https://sgnp.maharashtra.gov.in/Site/Home/Index.aspx">Sanjay Gandhi National Park</a></li>
+            <li><a href="https://asi.nic.in/">Archaeological Survey of India</a></li>
           </ul>
         </div>
         
