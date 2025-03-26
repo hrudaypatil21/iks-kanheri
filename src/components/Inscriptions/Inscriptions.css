@@ -1,150 +1,162 @@
-/* Global styles */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
-  }
-  
-  /* Container */
-  .kanheri-inscriptions-container {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(18, 18, 18, 0.8);
-    backdrop-filter: blur(15px);
-    padding: 20px;
-    box-sizing: border-box;
-    transition: background 0.3s ease-in-out;
-  }
-  
-  /* Light mode */
-  .kanheri-inscriptions-container.light {
-    background: #f4f4f4;
-    color: #000;
-  }
-  
-  /* Inscription details */
-  .inscription-details {
-    text-align: center;
-    max-width: 800px;
-    width: 100%;
-  }
-  
-  /* Navigation buttons */
-  .nav-button {
-    background: linear-gradient(135deg, #0078d4, #0056b3);
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.2s, background 0.3s;
-    font-weight: bold;
-  }
-  
-  .nav-button:hover {
-    background: linear-gradient(135deg, #0056b3, #003580);
-    transform: scale(1.05);
-  }
-  
-  /* Inscription content */
-  .inscription-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  /* Inscription card */
-  .inscription-card {
-    flex-grow: 1;
-    margin: 0 20px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-  }
-  
-  .inscription-card:hover {
-    transform: scale(1.02);
-  }
-  
-  /* Image */
-  .inscription-image {
-    max-width: 100%;
-    max-height: 400px;
-    object-fit: contain;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
-  }
-  
-  /* Pagination dots */
-  .pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .dot {
-    height: 12px;
-    width: 12px;
-    background: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 6px;
-    cursor: pointer;
-    transition: transform 0.3s, background 0.3s;
-  }
-  
-  .dot:hover {
-    transform: scale(1.2);
-  }
-  
-  .dot.active {
-    background: #0078d4;
-  }
-  
-  /* Dark Mode */
-  .kanheri-inscriptions-container.dark {
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(20px);
-    color: white;
-  }
-  
-  /* Fluent UI button */
-  .fluent-button {
-    margin-top: 15px;
-    padding: 10px 15px;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-    background: #0078d4;
-    color: white;
-    border: none;
-  }
-  
-  .fluent-button:hover {
-    background: #0056b3;
-  }
-  
-  /* Framer Motion Animations */
-  .motion-fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s ease-in-out forwards;
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+/* Inscriptions.css */
+
+
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.inscrip-page {
+  margin-top: 100px;
+}
+.card-container {
+  margin-top: 100px;
+}
+
+
+.bg-gray-900 {
+  background-color: #1f2937;
+}
+
+.text-gray-100 {
+  color: #f3f4f6;
+}
+
+.text-amber-400 {
+  color: #fbbf24;
+}
+
+.border-gray-700 {
+  border-color: #374151;
+}
+
+.bg-gray-800 {
+  background-color: #374151;
+}
+
+.hover\:bg-gray-700:hover {
+  background-color: #4b5563;
+}
+
+.text-gray-300 {
+  color: #d1d5db;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.md\:grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.transition-colors {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.bg-gradient-to-t {
+  background: linear-gradient(to top, #1f2937, transparent);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.group-hover\:scale-110:hover {
+  transform: scale(1.1);
+}
+
+.group-hover\:scale-110 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
