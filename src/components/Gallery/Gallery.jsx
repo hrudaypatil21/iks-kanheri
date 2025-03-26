@@ -2,15 +2,19 @@ import React from "react";
 import "./Gallery.css"; // Make sure to create this CSS file
 
 const images = [
-  "https://source.unsplash.com/random/800x600",
-  "https://source.unsplash.com/random/801x600",
-  "https://source.unsplash.com/random/800x601",
-  "https://source.unsplash.com/random/802x600",
-  "https://source.unsplash.com/random/800x602",
-  "https://source.unsplash.com/random/803x600",
-  "https://source.unsplash.com/random/800x603",
-  "https://source.unsplash.com/random/804x600",
-  "https://source.unsplash.com/random/800x604",
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.08_238ed3ae.jpg",
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.11_cd7b9041.jpg",
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.10_afeb0531.jpg",
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.19_80ae6f7f.jpg",
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.19_a027fa99.jpg",
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.38_b458b6b8.jpg",
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.38_40b04986.jpg",
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.37_c5e94580.jpg",
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.36_89232bd2.jpg",
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.23_43b6a669.jpg", 
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.21_f251a106.jpg",
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.22_186296bb.jpg"
+  
 ];
 
 const Gallery = () => {
@@ -28,9 +32,6 @@ const Gallery = () => {
                   alt={`Gallery Image ${index + 1}`}
                   className="gallery-image"
                 />
-              </div>
-              <div className="image-caption">
-                <p>Image {index + 1}</p>
               </div>
             </div>
           ))}
