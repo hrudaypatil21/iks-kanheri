@@ -1,51 +1,27 @@
-/* Header Section */
 .architecture-header {
-    position: relative;
-    height: 400px;
-    background-image: url('https://example.com/kanheri-caves-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    margin-bottom: 40px;
-  }
-  
-  /* Header Overlay */
-  .architecture-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-  
-  /* Header Typography */
-  .architecture-header h1,
-  .architecture-header p {
-    position: relative;
-    z-index: 2;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-  }
-  
-  .architecture-header h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .architecture-header p {
-    max-width: 800px;
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
+  background-image: url("src/assets/Kanheri_Great_Chaitya_panorama.jpg"); /* Update with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px; /* Adjust padding for spacing */
+  position: relative;
+}
+
+.architecture-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+.architecture-header h1,
+.architecture-header p {
+  position: relative;
+  z-index: 1;
+}
+
   
   /* Main Content Section */
   .architecture-section {

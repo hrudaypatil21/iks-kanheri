@@ -60,32 +60,17 @@ const LandingPage = () => {
     }
   }, [location]);
 
-  const handleAudioPlay = (e) => {
-    const playButtons = document.querySelectorAll('.audio-play');
-    playButtons.forEach(button => {
-      if (button !== e.currentTarget) {
-        button.textContent = '▶';
-      }
-    });
-    e.currentTarget.textContent = e.currentTarget.textContent === '▶' ? '⏸' : '▶';
-    console.log('Playing audio track:', e.currentTarget.nextElementSibling.querySelector('h4').textContent);
-  };
-
-  const showMapInfo = (pointId) => {
-    document.querySelectorAll('.map-info').forEach(info => {
-      info.style.display = 'none';
-    });
-    document.getElementById(pointId).style.display = 'block';
-  };
-
   return (
     <div className="landing-page">
       {/* Hero Section */}
-      <section id="home" className="hero">
-        <h1>Discover Kanheri Caves</h1>
-        <p>Explore ancient Buddhist rock-cut monuments dating back to the 1st century BCE, nestled in the heart of Mumbai</p>
-        <a href="#tour" className="btn">Start Virtual Tour</a>
-      </section>
+      <section id="home" className="hero" style={{backgroundImage: "url('src/assets/360_F_241761025_5bXOUhfX3pLsA1uncOrklaCl7LiSIilD-1.jpg')"}}>
+  <div className="hero-content">
+    <h1>Discover Kanheri Caves</h1>
+    <p>Explore ancient Buddhist rock-cut monuments dating back to the 1st century BCE, nestled in the heart of Mumbai</p>
+    <a href="#tour" className="btn">Start Virtual Tour</a>
+  </div>
+</section>
+
       
       {/* History Section */}
       <section id="history" className="history">
@@ -107,7 +92,7 @@ const LandingPage = () => {
                     <p>The monastic university at Kanheri was known for Buddhist studies and attracted scholars from across Asia. Evidence suggests that manuscripts were copied and preserved here, contributing to the preservation of Buddhist texts.</p>
                 </div>
             <div className="history-image">
-              <img src="/api/placeholder/600/400" alt="Historic view of Kanheri Caves" />
+              <img src="src\assets\elephanta-caves-tour-by-magical-mumbai-tours-13.jpg" alt="Historic view of Kanheri Caves" />
             </div>
           </div>
           
@@ -157,58 +142,12 @@ const LandingPage = () => {
       {/* Virtual Tour Section */}
       <section id="tour" className="virtual-tour">
         <div className="container">
-          <div className="section-title">
-            <h2>Virtual Tour</h2>
-          </div>
-          <p style={{textAlign: 'center', marginBottom: '2rem'}}>Explore the most significant caves and structures without leaving your seat</p>
-          
-          {/* 360° Panorama Viewer */}
-          <h3 style={{textAlign: 'center', marginBottom: '1.5rem'}}>360° Experience: Cave 3 (The Great Chaitya)</h3>
-          <div id="panorama" className="panorama-viewer"></div>
-          
-          <div className="tour-container">
-            <div className="tour-card">
-              <div className="tour-image">
-                <img src="/api/placeholder/400/300" alt="Cave 3 - The Great Chaitya" />
-              </div>
-              <div className="tour-info">
-                <h3>Cave 3 - The Great Chaitya</h3>
-                <p>The most impressive cave featuring a massive prayer hall with intricate carvings and a large stupa.</p>
-                <button className="btn" style={{marginTop: '1rem'}} onClick={() => window.pannellum.viewer('panorama', { /* config */ })}>
-                  View 360° Tour
-                </button>
-              </div>
-            </div>
-          </div>
-          
-          {/* Audio Guide */}
-          <div className="audio-guide">
-            <h3>Audio Guide Tour</h3>
-            <p>Enhance your virtual experience with our audio guides narrated by archaeological experts.</p>
-            
-            <div className="audio-tracks">
-              <div className="audio-track">
-                <div className="audio-play" onClick={handleAudioPlay}>▶</div>
-                <div className="audio-info">
-                  <h4>Introduction to Kanheri</h4>
-                  <p>Overview of the site's history and significance</p>
-                </div>
-                <div className="audio-time">4:32</div>
-              </div>
-            </div>
-          </div>
+
           
           {/* Interactive Map */}
           <h3 style={{textAlign: 'center', marginTop: '4rem'}}>Interactive Cave Complex Map</h3>
           <div className="map-container">
-            <img src="/api/placeholder/1200/600" alt="Map of Kanheri Caves Complex" className="map-image" />
-            
-            <div className="map-point" style={{top: '30%', left: '25%'}} onClick={() => showMapInfo('point1')}></div>
-            
-            <div id="point1" className="map-info">
-              <h4>Cave 1-2: Entrance Complex</h4>
-              <p>The initial caves featuring verandahs and guardians that welcome visitors to the complex.</p>
-            </div>
+            <img src="src\assets\11-kanheri-cave-map-Copy.jpg" alt="Map of Kanheri Caves Complex" className="map-image" />
           </div>
         </div>
       </section>
@@ -263,16 +202,7 @@ const LandingPage = () => {
           </div>
           
           {/* Before-After Comparison */}
-          <h3 style={{ textAlign: 'center', marginTop: '4rem' }}>Conservation Progress</h3>
-            <div className="comparison-container">
-                <div className="comparison-before">
-                    <img src="/api/placeholder/800/400" alt="Before restoration"/>
-                </div>
-                <div className="comparison-after">
-                    <img src="/api/placeholder/800/400" alt="After restoration"/>
-                </div>
-                <div className="comparison-slider"></div>
-            </div>
+        
         </div>
       </section>
       
