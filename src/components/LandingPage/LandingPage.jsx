@@ -97,7 +97,7 @@ const LandingPage = () => {
           </div>
           
           {/* Interactive Timeline */}
-          <h3 style={{textAlign: 'center', marginTop: '4rem'}}>Interactive Timeline</h3>
+          <h3 style={{textAlign: 'center', marginTop: '4rem'}}>Timeline</h3>
           <div className="timeline">
             <div class="timeline-container left">
                     <div class="timeline-content">
@@ -145,7 +145,7 @@ const LandingPage = () => {
 
           
           {/* Interactive Map */}
-          <h3 style={{textAlign: 'center', marginTop: '4rem'}}>Interactive Cave Complex Map</h3>
+          <h1 style={{textAlign: 'center', marginTop: '4rem'}}>Map</h1>
           <div className="map-container">
             <img src="src\assets\11-kanheri-cave-map-Copy.jpg" alt="Map of Kanheri Caves Complex" className="map-image" />
           </div>
@@ -162,7 +162,7 @@ const LandingPage = () => {
           <div className="art-gallery">
             <div className="art-card">
               <div className="art-image">
-                <img src="/api/placeholder/400/300" alt="Buddha Sculptures" />
+                <img src="src\assets\aa5313516da84407df5176b1adf07133.jpg" alt="Buddha Sculptures" />
               </div>
               <div className="art-info">
                 <h3>Buddha Representations</h3>
@@ -172,7 +172,7 @@ const LandingPage = () => {
 
             <div class="art-card">
                     <div class="art-image">
-                        <img src="/api/placeholder/400/300" alt="Bodhisattva Carvings"/>
+                        <img src="src\assets\IMG_6241.JPG" alt="Bodhisattva Carvings"/>
                     </div>
                     <div class="art-info">
                         <h3>Bodhisattva Figures</h3>
@@ -182,7 +182,7 @@ const LandingPage = () => {
             
                 <div class="art-card">
                     <div class="art-image">
-                        <img src="/api/placeholder/400/300" alt="Narrative Reliefs"/>
+                        <img src="src\assets\_22e60f34-0d32-11e6-9193-d7b8f3a11d8b.avif" alt="Narrative Reliefs"/>
                     </div>
                     <div class="art-info">
                         <h3>Narrative Panels</h3>
@@ -192,7 +192,7 @@ const LandingPage = () => {
                 
                 <div class="art-card">
                     <div class="art-image">
-                        <img src="/api/placeholder/400/300" alt="Symbolic Motifs"/>
+                        <img src="src\assets\Kanheri-Caves-Cave3 (7).jpg" alt="Symbolic Motifs"/>
                     </div>
                     <div class="art-info">
                         <h3>Symbolic Motifs</h3>

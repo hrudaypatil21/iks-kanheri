@@ -13,7 +13,9 @@ const images = [
   "src/gallery/WhatsApp Image 2025-03-26 at 12.02.36_89232bd2.jpg",
   "src/gallery/WhatsApp Image 2025-03-26 at 12.02.23_43b6a669.jpg", 
   "src/gallery/WhatsApp Image 2025-03-26 at 12.02.21_f251a106.jpg",
-  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.22_186296bb.jpg"
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.22_186296bb.jpg",
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.22_9a22cf2e.jpg",
+  "src/gallery/WhatsApp Image 2025-03-26 at 12.02.35_3e55b544.jpg"
   
 ];
 

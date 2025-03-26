@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer'
 import Architecture from './components/ArchitecturePage/Architecture'
 import Inscriptions from './components/Inscriptions/Inscriptions'
 import Gallery from './components/Gallery/Gallery'
+import History from './components/History/History'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import './styles.css';
@@ -48,6 +49,7 @@ function App() {
     <Header />
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/history" element={<History/>} />
       <Route path="/architecture" element={<Architecture/>} />
       <Route path="/inscriptions" element={<Inscriptions />} />
       <Route path="/gallery" element={<Gallery/>} />
