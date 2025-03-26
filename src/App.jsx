@@ -4,6 +4,7 @@ import LandingPage from './components/LandingPage/LandingPage'
 import Footer from './components/Footer/Footer'
 import Architecture from './components/ArchitecturePage/Architecture'
 import Inscriptions from './components/Inscriptions/Inscriptions'
+import Gallery from './components/Gallery/Gallery'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import './styles.css';
@@ -49,6 +50,7 @@ function App() {
       <Route path="/" element={<LandingPage />} />
       <Route path="/architecture" element={<Architecture/>} />
       <Route path="/inscriptions" element={<Inscriptions />} />
+      <Route path="/gallery" element={<Gallery/>} />
       <Route path="*" element={<h1>404 - Not Found</h1>} />
     </Routes>
     <Footer/>

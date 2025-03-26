@@ -5,7 +5,7 @@ import './Inscriptions.css';
 const inscriptions = [
     {
       id: 1,
-      title: "The Sun's Lament",
+      title: "Grand Chaitya Cave",
       description: "A 3-foot diameter sandstone disk carved with solar symbols, showing a weeping sun deity surrounded by drought-stricken crops. Dated to approximately 200 BCE.",
       imageUrl: "https://www.flickr.com/photos/lobodrl/5273499083",
     },

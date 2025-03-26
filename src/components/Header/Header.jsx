@@ -11,7 +11,7 @@ const Header = () => {
             <li><a href="#history">History</a></li>
             <li><a href="/architecture">Architecture</a></li>
             <li><a href="/inscriptions">Inscriptions</a></li>
-            <li><a href="#art">Art</a></li>
+            <li><a href="/gallery">Gallery</a></li>
           </ul>
         </div>
       </nav>
