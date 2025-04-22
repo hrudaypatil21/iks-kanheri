@@ -76,3 +76,7 @@
       min-height: 250px;
     }
   }
+
+  .details-list {
+    color: rgb(224, 217, 196);
+  }

@@ -65,10 +65,8 @@ const History = () => {
               </p>
             </div>
             <div className="intro-image animate-on-scroll">
-              <img src="/placeholder.svg?height=500&width=700" alt="Aerial view of Kanheri Caves" />
-              <div className="image-caption">
-                <p>Aerial view of the Kanheri Caves complex nestled in the lush forests of Sanjay Gandhi National Park</p>
-              </div>
+              <img src="src\assets\1485618586_dsc_0119_2.jpg.webp" alt="Aerial view of Kanheri Caves" />
+         
             </div>
           </div>
         </div>
@@ -94,7 +92,7 @@ const History = () => {
                   These initial excavations were simple dwellings (viharas) and prayer halls (chaityas) 
                   carved by Buddhist monks.
                 </p>
-                <img src="/placeholder.svg?height=300&width=500" alt="Early cave excavations" />
+                <img src="src\gallery\WhatsApp Image 2025-03-26 at 12.02.36_89232bd2.jpg" alt="Early cave excavations" />
               </div>
             </div>
             
@@ -142,7 +140,7 @@ const History = () => {
                   Large Buddha figures, Bodhisattva images, and elaborate relief sculptures depicting scenes from 
                   Buddhist tales were added to the caves.
                 </p>
-                <img src="/placeholder.svg?height=300&width=500" alt="Mahayana Buddhist sculptures" />
+                <img src="src\gallery\WhatsApp Image 2025-03-26 at 12.02.11_cd7b9041.jpg" alt="Mahayana Buddhist sculptures" />
               </div>
             </div>
             
@@ -172,7 +170,7 @@ const History = () => {
                   As Buddhism waned in the region, Kanheri saw a gradual decline in activity. The caves were eventually 
                   abandoned as active religious sites, though they continued to be visited by travelers and pilgrims.
                 </p>
-                <img src="/placeholder.svg?height=300&width=500" alt="Abandoned caves" />
+                <img src="src\gallery\WhatsApp Image 2025-03-26 at 12.02.22_90ea1fb5.jpg" alt="Abandoned caves" />
               </div>
             </div>
           </div>
@@ -310,28 +308,28 @@ const History = () => {
             
             <div className="art-gallery animate-on-scroll">
               <div className="art-item">
-                <img src="/placeholder.svg?height=300&width=400" alt="Buddha sculpture" />
+                <img src="src\assets\aa5313516da84407df5176b1adf07133.jpg" alt="Buddha sculpture" />
                 <div className="art-caption">
                   <p>Buddha sculpture in meditation pose (dhyana mudra)</p>
                 </div>
               </div>
               
               <div className="art-item">
-                <img src="/placeholder.svg?height=300&width=400" alt="Bodhisattva carving" />
+                <img src="src\assets\IMG_6241.JPG" alt="Bodhisattva carving" />
                 <div className="art-caption">
                   <p>Intricately carved Bodhisattva figure with ornate details</p>
                 </div>
               </div>
               
               <div className="art-item">
-                <img src="/placeholder.svg?height=300&width=400" alt="Relief panel" />
+                <img src="src\assets\_22e60f34-0d32-11e6-9193-d7b8f3a11d8b.avif" alt="Relief panel" />
                 <div className="art-caption">
                   <p>Relief panel depicting scenes from Buddhist jataka tales</p>
                 </div>
               </div>
               
               <div className="art-item">
-                <img src="/placeholder.svg?height=300&width=400" alt="Decorative motifs" />
+                <img src="src\assets\Kanheri-Caves-Cave3 (7).jpg" alt="Decorative motifs" />
                 <div className="art-caption">
                   <p>Decorative motifs and patterns adorning the cave walls</p>
                 </div>
@@ -414,9 +412,7 @@ const History = () => {
           </div>
           
           <div className="preservation-content">
-            <div className="preservation-image animate-on-scroll">
-              <img src="/placeholder.svg?height=500&width=700" alt="Conservation work at Kanheri" />
-            </div>
+          
             
             <div className="preservation-text animate-on-scroll">
               <p>
